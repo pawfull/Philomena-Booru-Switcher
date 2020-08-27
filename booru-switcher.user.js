@@ -36,7 +36,7 @@ const boorus = [
   {name: 'Twibooru', host: 'twibooru.org', filterId: 2, bor: true},  // runs on Booru-on-Rails
   {name: 'Derpibooru', host: 'derpibooru.org', filterId: 56027},
   {name: 'Trixiebooru', host: 'trixiebooru.org', filterId: 56027},
-  {name: 'Manebooru', host: 'manebooru.org', filterId: 56027},
+  {name: 'Manebooru', host: 'manebooru.org', filterId: 2},
 ];
 const DEBUG = false;
 
@@ -381,7 +381,6 @@ function searchByApi(host) {
     'www.trixiebooru.org': 'derpibooru',
     'derpibooru.org': 'derpibooru',
     'trixiebooru.org': 'derpibooru',
-    'manebooru.org': 'derpibooru',
   };
 
   const sourceId = getCurrentImageId();
